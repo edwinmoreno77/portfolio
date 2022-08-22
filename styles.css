@@ -29,6 +29,7 @@ p {
     color: #000;
 }
 
+
 /* NAVBAR  */
 
 .container-nav {
@@ -41,26 +42,19 @@ p {
 }
 
 .navbar {
-    background-color: hsla(240, 100%, 24%, 1);
-    background-image:
-        radial-gradient(at 69% 19%, hsla(206, 81%, 43%, 1) 0px, transparent 50%),
-        radial-gradient(at 75% 84%, hsla(206, 81%, 43%, 1) 0px, transparent 50%),
-        radial-gradient(at 69% 54%, hsla(206, 81%, 43%, 1) 0px, transparent 50%),
-        radial-gradient(at 37% 26%, hsla(206, 81%, 43%, 1) 0px, transparent 50%),
-        radial-gradient(at 20% 26%, hsla(203, 85%, 46%, 1) 0px, transparent 50%),
-        radial-gradient(at 14% 53%, hsla(206, 81%, 43%, 1) 0px, transparent 50%),
-        radial-gradient(at 86% 36%, hsla(221, 100%, 53%, 1) 0px, transparent 50%),
-        radial-gradient(at 20% 75%, hsla(206, 81%, 43%, 1) 0px, transparent 50%),
-        radial-gradient(at 39% 82%, hsla(206, 81%, 43%, 1) 0px, transparent 50%);
-    height: 8rem;
+    height: 4.5rem;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(85deg, #0765bd, #4ccffb);
 }
 
 .navbar-title {
     color: white;
+    letter-spacing: -.08em;
 }
 
 .nav-foto img {
-    width: 8.5rem;
+    width: 5rem;
 }
 
 .nav-foto {
@@ -80,25 +74,84 @@ p {
     display: inline-block;
     margin-right: 1rem;
     text-decoration: none;
-    font-size: 1.3rem;
-    border-radius: 3rem;
-    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    padding: 0.2rem;
 }
 
 .item {
     text-decoration: none;
     color: white;
-    padding: 0.8rem;
+    padding: 0.6rem;
 }
 
 .item:hover {
-    padding: 0.8rem;
+    padding: 0.6rem;
     background-color: white;
     color: black;
-    border-radius: 1.5rem;
+    border-radius: 1.1rem;
 }
 
 /* NAVBAR  */
+
+
+/* INICIO */
+
+.container-inicio {
+    background: linear-gradient(85deg, #0765bd, #4ccffb);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.title-inicio {
+    font-size: 7rem;
+    font-weight: 800;
+    letter-spacing: -.09em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .title-inicio {
+        font-size: 4rem;
+    }
+}
+
+.title-item {
+    display: block;
+    color: #fff;
+    line-height: 1.1;
+    position: relative;
+    padding: 0 12px;
+}
+
+.title-item:before {
+    background: linear-gradient(90deg, var(--start-color), var(--end-color));
+    content: var(--content);
+    position: absolute;
+    inset: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated 9s infinite;
+    animation-delay: var(--delay);
+}
+
+@keyframes animated {
+
+    0%,
+    16.667%,
+    100% {
+        opacity: 1;
+    }
+
+    33.333%,
+    83.333% {
+        opacity: 0;
+    }
+
+}
+
+/* INICIO */
 
 
 /* MAIN  */
@@ -110,7 +163,16 @@ p {
     align-items: center;
     padding-left: 6rem;
     padding-right: 6rem;
-    background-color: rgb(216, 229, 238);
+    background-color: rgb(255, 255, 255);
+}
+
+.title-main {
+    background: linear-gradient(85deg, #0765bd, #4ccffb);
+    font-size: 2.1rem;
+    letter-spacing: -.06em;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 
@@ -132,89 +194,48 @@ p {
     grid-area: sección-2;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem;
 }
 
-.button-inicio {
+.seccion-2 img {
+    width: 45rem;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.button {
+    font-weight: bold;
     display: inline-block;
     justify-content: center;
     text-align: center;
-    width: 10rem;
-    height: 2rem;
-    padding: 1rem;
-
+    width: 12rem;
+    height: 2.5rem;
+    padding: 0.6rem;
+    margin: 1rem;
+    border-radius: 0.7rem;
+    box-shadow: rgba(12, 33, 119, 0.725) 2px 4px 3px 1px;
+    color: white;
+    background: linear-gradient(85deg, #0765bd, #4ccffb);
 }
 
-.twitter img {
-    width: 5.5rem;
-
+.button:hover {
+    box-shadow: #007cf0 2px 4px 3px 1px;
 }
-
-.instagram img {
-    width: 5.5rem;
-
-}
-
-.whatsapp img {
-    width: 5.5rem;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.row {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    justify-content: space-around;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-.col-1 {
-    display: grid;
-    grid-column: 1/2;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px black;
-}
-
-.col-2 {
-    display: grid;
-    grid-column: 2/2;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.button-inicio {
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
-    width: 10rem;
-    height: 2rem;
-    padding: 1rem;
-
-} */
-
 
 /* MAIN  */
+
+
+/* ICONOS */
+
+.icon img {
+    width: 2.5rem;
+}
+
+/* ICONOS */
