@@ -8,8 +8,12 @@
     <title>EM PORTAFOLIO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/styles.css">
+
+    <script src="https://kit.fontawesome.com/eb5fea5564.js" crossorigin="anonymous"></script>
+
+    <script defer src="index.js"></script>
+
 </head>
 
 <body>
@@ -17,13 +21,18 @@
     <!-- navbar -->
     <nav class="navbar">
         <div class="container-nav">
-            <div class="nav-foto">
-                <img src="assets/user-glass.png" alt="">
-                <h1 class="navbar-title">
-                    < EM />
-                </h1>
+            <div class="nav-logo">
+                <div class="nav-user-em">
+                    <img class="nav-user" src="assets/user-glass.png" alt="">
+                    <h1 class="navbar-title">
+                        < EM />
+                    </h1>
+                </div>
             </div>
-            <ul class="nav-link">
+            <div type="button" class="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
                 <li class="nav-item"><a class="item" href="#Inicio">Inicio</a></li>
                 <li class="nav-item"><a class="item" href="#Sobremi">Sobre mi</a></li>
                 <li class="nav-item"><a class="item" href="#Portafolio">Portafolio</a></li>
@@ -48,59 +57,51 @@
             </h1>
         </div>
     </section>
-
     <!-- inicio  -->
 
     <!-- sobre mi  -->
-    <section id="Sobremi">
-        <div class="container-main">
-            <div class="row">
-                <div class="seccion-1 icon">
-                    <h1 class="title-main"> <i>Me alegra que estes aqui.</i>
-                    </h1>
-                    <h3 class="title-main"> <i> si necesitas desarrolar tu
-                            sitio web a medida puedes contactarme y con gusto trabajaremos juntos.</i></h3>
-                    <div class="button-container">
-                        <a class="button" href="#Portafolio"> <i>Portafolio</i></a>
-                        <a class="button" href="#Contactos"> <i>Contactos</i></a>
-                    </div>
+    <section id="Sobremi" class="sobremi">
+        <div class="sobremi-container">
+            <div class="sobremi-text">
+                <h1 class="title-sobremi"> <i>Me alegra que estes aqui. <br> si necesitas desarrolar tu
+                        sitio web a medida puedes contactarme y con gusto trabajaremos juntos.</i>
+                </h1>
+                <div class="button-container">
+                    <a class="button" href="#Portafolio"> <i>Portafolio</i></a>
+                    <a class="button" href="#Contactos"> <i>Contactos</i></a>
                 </div>
-                <div class="seccion-2">
-                    <img src="assets/fondo-inicio.jpeg" alt="">
-                </div>
+            </div>
+            <div class="sobremi-img">
+                <img class="img-sobremi-pc" src="assets/fondo-inicio.jpeg" alt="programador">
             </div>
         </div>
     </section>
     <!-- sobre mi  -->
 
-    <!-- portafolio  -->
-    <section id="Portafolio">
-        <div class="container-main">
-            <div class="row">
-                <div class="seccion-1 icon">
-                    <h1 class="title-main animate__animated animate__fadeInDownBig"> <i>PORTAFOLIO</i> </h1>
-                    <h3 class="title-main animate__animated animate__bounce"> <i> algunos de los trabajos
-                            realizados.</i></h3>
-                    <div class="button-container">
-                        <a class="button" href="#Sobremi"> <i>Portafolio</i></a>
-                    </div>
-                </div>
-                <div class="seccion-2">
-                    <img src="assets/fondo-inicio.jpeg" alt="">
-                </div>
+    <!-- habilidades  -->
+    <section id="habilidades" class="habilidades">
+        <div class="habilidades-container">
+            <div class="habilidades-text">
+                <h1 class="title-habilidades"> <i>Estos son algunos de los lenguajes y herramientas de programación que
+                        he utilizado.</i></h1>
+            </div>
+            <div class="habilidades-img">
+                <img class="img-habilidades" src="assets/html.png" alt="programador">
+                <img class="img-habilidades" src="assets/css.png" alt="programador">
+                <img class="img-habilidades" src="assets/javascript.png" alt="programador">
+                <img class="img-habilidades" src="assets/bootstrap-logo-shadow.png" alt="programador">
+                <img class="img-habilidades" src="assets/logo-git.png" alt="programador">
+                <img class="img-habilidades" src="assets/react.png" alt="programador">
+                <img class="img-habilidades" src="assets/nodejs.png" alt="programador">
+                <img class="img-habilidades" src="assets/mongodb_compass.png" alt="programador">
+                <img class="img-habilidades" src="assets/express.png" alt="programador">
+            </div>
+            <div class="habilidades-logo-circulo">
+                <img class="img-habilidades-pc" src="assets/portafolio.png" alt="programador">
             </div>
         </div>
     </section>
-    <!-- portafolio  -->
-
-
-
-
-
-
-
-
-
+    <!-- habilidades  -->
 
 </body>
 
