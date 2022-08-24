@@ -81,7 +81,7 @@ p {
     letter-spacing: -.08em;
     font-weight: bold;
     line-height: 80px;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .nav-menu {
@@ -91,8 +91,8 @@ p {
 }
 
 .nav-item {
-    font-size: 18px;
-    margin: 0 10px;
+    font-size: 16px;
+    margin: 0 3px;
     line-height: 80px;
     text-transform: uppercase;
     width: max-content;
@@ -129,8 +129,8 @@ p {
     display: none;
 }
 
-@media(max-width: 768px) {
-
+/* @media(max-width: 768px) { */
+@media(max-width: 840px) {
     body {
         padding-top: 70px 20px;
     }
@@ -281,10 +281,11 @@ p {
     letter-spacing: -.06em;
     margin: 0 auto;
     margin-top: 3rem;
+    padding: 0px 15px;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     line-height: 1.1;
-    max-width: 450px;
+    max-width: 500px;
 }
 
 .button-container {
@@ -317,6 +318,10 @@ p {
 }
 
 @media(min-width: 992px) {
+    .sobremi {
+        text-align: left;
+    }
+
     .sobremi-container {
         display: flex;
         justify-content: space-between;
@@ -332,6 +337,10 @@ p {
     .sobremi-container {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .title-sobremi {
+        font-size: 2.7rem;
     }
 }
 
@@ -360,14 +369,27 @@ p {
 }
 
 .img-habilidades {
-    width: 21%;
-    max-width: 90px;
+    /* width: 21%; */
+    width: 90px;
+    max-width: 6rem;
     padding: 0.5rem;
+    filter: brightness(90%);
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+}
+
+.firebase {
+    width: 90px;
+}
+
+.img-habilidades:hover {
+    filter: brightness(140%);
+    transform: scale(1.1);
 }
 
 .title-habilidades {
     background: var(--theme-color);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     letter-spacing: -.06em;
     margin: 0 auto;
     margin-top: 1rem;
@@ -378,6 +400,11 @@ p {
     max-width: 650px;
 }
 
+.habilidades-logo-circulo {
+    padding: 10px 10px;
+
+
+}
 
 @media(min-width: 992px) {
 
@@ -387,6 +414,19 @@ p {
         letter-spacing: -.06em;
         line-height: 1.1;
         max-width: 950px;
+    }
+
+    .habilidades-img {
+        margin: 15px;
+        padding: 15px 200px;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    .habilidades-img {
+        margin: 15px;
+        padding: 15px 300px;
     }
 }
 
