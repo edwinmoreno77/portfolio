@@ -51,6 +51,7 @@ p {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 .container-nav {
@@ -156,10 +157,13 @@ p {
     }
 
     .nav-menu {
+        background: var(--theme-color-reverse);
         flex-direction: column;
         align-items: center;
         margin-right: 0px;
+
         position: fixed;
+
         left: 0;
         top: 60px;
         width: 100%;
@@ -168,6 +172,7 @@ p {
         overflow-y: auto;
         left: 100%;
         transition: left 0.3s;
+        z-index: 100;
     }
 
     .nav-item {
@@ -352,6 +357,11 @@ p {
 
 /* habilidades */
 
+.habilidades-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .habilidades {
     margin-top: 3rem;
     padding-top: 4rem;
@@ -407,37 +417,12 @@ p {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     line-height: 1.1;
-    max-width: 650px;
+    max-width: 950px;
 }
 
 .habilidades-logo-circulo {
     padding: 10px 10px;
 }
-
-@media(min-width: 992px) {
-
-    .title-habilidades {
-
-        font-size: 3rem;
-        letter-spacing: -.06em;
-        line-height: 1.1;
-        max-width: 950px;
-    }
-
-    .habilidades-links {
-        margin: 15px;
-        padding: 15px 200px;
-    }
-}
-
-@media(min-width: 1200px) {
-
-    .habilidades-links {
-        margin: 20px;
-        padding: 15px 300px;
-    }
-}
-
 
 /* habilidades */
 
@@ -452,11 +437,17 @@ p {
 
 
 
-
-
 .container-footer {
     background: var(--theme-color-reverse);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    max-width: 350px;
 }
