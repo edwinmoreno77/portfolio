@@ -32,6 +32,7 @@ p {
 
 :root {
     --theme-color: linear-gradient(90deg, #0765bd, #4ccffb);
+    --theme-color-reverse: linear-gradient(90deg, #4ccffb, #0765bd);
     --theme-color-dark: #0765bd;
     --primary-color: #4ccffb;
     --secondary-color: #0765bd;
@@ -363,6 +364,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .img-habilidades-pc {
@@ -384,6 +386,12 @@ p {
     width: 65px;
 }
 
+.express {
+    width: 120px;
+    height: 70px;
+}
+
+
 .img-habilidades:hover {
     filter: brightness(140%);
     transform: scale(1.1);
@@ -404,8 +412,6 @@ p {
 
 .habilidades-logo-circulo {
     padding: 10px 10px;
-
-
 }
 
 @media(min-width: 992px) {
@@ -443,3 +449,14 @@ p {
 }
 
 /* ICONOS */
+
+
+
+
+
+.container-footer {
+    background: var(--theme-color-reverse);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
