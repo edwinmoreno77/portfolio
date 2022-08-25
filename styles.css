@@ -41,6 +41,15 @@ p {
 }
 
 
+/* ICONOS */
+
+.icon img {
+    width: 2.5rem;
+}
+
+/* ICONOS */
+
+
 /* NAVBAR  */
 
 .navbar {
@@ -131,7 +140,6 @@ p {
     display: none;
 }
 
-/* @media(max-width: 768px) { */
 @media(max-width: 840px) {
     body {
         padding-top: 70px 20px;
@@ -161,9 +169,8 @@ p {
         flex-direction: column;
         align-items: center;
         margin-right: 0px;
-
         position: fixed;
-
+        z-index: 100;
         left: 0;
         top: 60px;
         width: 100%;
@@ -172,7 +179,6 @@ p {
         overflow-y: auto;
         left: 100%;
         transition: left 0.3s;
-        z-index: 100;
     }
 
     .nav-item {
@@ -270,7 +276,7 @@ p {
 /* INICIO */
 
 
-/* sobremi */
+/* SOBREMI */
 
 .sobremi {
     text-align: center;
@@ -351,11 +357,11 @@ p {
 }
 
 
-/* sobremi */
+/* SOBREMI */
 
 
 
-/* habilidades */
+/* HABILIDADES */
 
 .habilidades-container {
     max-width: 900px;
@@ -424,24 +430,26 @@ p {
     padding: 10px 10px;
 }
 
-/* habilidades */
-
-
-/* ICONOS */
-
-.icon img {
-    width: 2.5rem;
-}
-
-/* ICONOS */
+/* HABILIDADES */
 
 
 
+/* FOOTER */
 .container-footer {
     background: var(--theme-color-reverse);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+}
+
+.footer-title {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
 }
 
 .footer-img {
@@ -451,3 +459,5 @@ p {
     width: 60%;
     max-width: 350px;
 }
+
+/* FOOTER */
