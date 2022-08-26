@@ -361,7 +361,7 @@ p {
 /* HABILIDADES */
 
 .habilidades-container {
-    min-height: 70vh;
+    min-height: 700px;
     background: url("assets/fondo-2.jpeg") no-repeat center center fixed;
     background-size: 1200px;
 
