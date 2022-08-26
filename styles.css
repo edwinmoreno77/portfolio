@@ -362,7 +362,7 @@ p {
 
 .habilidades-container {
     min-height: 100vh;
-    background: url("../assets/fondo-2.jpeg") no-repeat center center fixed;
+    background: url("assets/fondo-2.jpeg") no-repeat center center fixed;
     background-size: cover;
 
     display: flex;
