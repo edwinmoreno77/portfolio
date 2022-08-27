@@ -34,6 +34,7 @@ p {
 :root {
     --theme-color: linear-gradient(90deg, #0765bd, #4ccffb);
     --theme-color-reverse: linear-gradient(90deg, #4ccffb, #0765bd);
+    --theme-color-reverse-transparency: linear-gradient(90deg, #4ccffbe9, #0765bdde);
     --theme-color-dark: #0765bd;
     --primary-color: #4ccffb;
     --secondary-color: #0765bd;
@@ -165,20 +166,21 @@ p {
     }
 
     .nav-menu {
-        background: var(--theme-color-reverse);
+        background: var(--theme-color-reverse-transparency);
         flex-direction: column;
         align-items: center;
         margin-right: 0px;
         position: fixed;
         z-index: 100;
         left: 0;
+        bottom: 0;
         top: 60px;
         width: 100%;
         padding: 10px 0;
-        height: calc(100% - 60px);
+        height: calc(80% - 60px);
         overflow-y: auto;
         left: 100%;
-        transition: left 0.3s;
+        transition: left 0.2s;
     }
 
     .nav-item {
@@ -197,7 +199,7 @@ p {
     }
 
     .nav-menu_visible {
-        left: 0;
+        left: 0%;
     }
 }
 
@@ -407,11 +409,14 @@ p {
 
 .Heroku {
     width: 65px;
+    margin-right: 25px;
+    margin-left: 20px;
 }
 
 .express {
-    width: 120px;
+    width: 130px;
     height: 70px;
+    margin-left: 0px;
 }
 
 
