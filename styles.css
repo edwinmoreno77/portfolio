@@ -18,6 +18,8 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+
+    /*este pading de 90px es por la propiedad fixed de la barra de navegación*/
     padding: 90 0px;
     background-color: rgb(253, 253, 253);
 }
@@ -177,7 +179,7 @@ p {
         top: 60px;
         width: 100%;
         padding: 10px 0;
-        height: calc(80% - 60px);
+        height: calc(100% - 60px);
         overflow-y: auto;
         left: 100%;
         transition: left 0.2s;
@@ -510,7 +512,7 @@ p {
 
 .carta .frontal {
     transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 7px rgb(100, 100, 100);
 }
 
 .carta .frontal img {
@@ -540,22 +542,27 @@ p {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 7px rgb(100, 100, 100);
 }
 
 .carta .trasera .link {
     border-top: solid 1px #f3f3f3;
     height: 50px;
     line-height: 50px;
-    font-size: 25px;
 }
 
-.link {
-    filter: brightness(95%);
+.link-item {
+    filter: brightness(90%);
+    font-size: 30px;
+    padding: 12px;
 }
 
-.link:hover {
-    filter: brightness(140%);
+.link-item:hover {
+    filter: brightness(165%);
+}
+
+.carta-texto {
+    color: #fff;
 }
 
 .carta .trasera .link a {
