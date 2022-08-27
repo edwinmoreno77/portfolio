@@ -114,13 +114,12 @@ p {
     text-decoration: none;
     color: white;
     padding: 0.6rem;
-    border-radius: 1.1rem;
+    border-radius: 2rem;
 }
 
 .item:hover,
 .item_active {
     padding: 0.6rem;
-    border-radius: 1.1rem;
     background-color: white;
     color: black;
     transition: 0.8s;
@@ -452,6 +451,24 @@ p {
 
 
 
+/* PORTAFOLIO */
+
+.titulo-portafolio {
+    display: flex;
+    justify-content: center;
+    background: var(--theme-color);
+    font-size: 2rem;
+    letter-spacing: -.06em;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    line-height: 1.1;
+}
+
+
+
 /* CARTA */
 
 .portafolio {
@@ -459,7 +476,7 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 
 .carta {
@@ -472,7 +489,7 @@ p {
 
 .carta .cara {
     position: absolute;
-    width: 100%;
+    width: 105%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     border-radius: 10px;
@@ -519,6 +536,15 @@ p {
     border-top: solid 1px #f3f3f3;
     height: 50px;
     line-height: 50px;
+    font-size: 25px;
+}
+
+.link {
+    filter: brightness(95%);
+}
+
+.link:hover {
+    filter: brightness(140%);
 }
 
 .carta .trasera .link a {
@@ -543,11 +569,17 @@ p {
     transform: perspective(600px) rotateY(360deg);
 }
 
+
 /* CARTA */
 
 
 
+/* PORTAFOLIO */
+
+
+
 /* FOOTER */
+
 .container-footer {
     background: var(--theme-color-reverse);
     display: flex;
@@ -557,12 +589,28 @@ p {
     padding: 10px;
 }
 
+.ul-footer {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+
+}
+
+.footer-item {
+    font-size: 25px;
+    margin: 8px 10px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
 .footer-title {
     display: block;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: #fff;
+    font-size: 10px;
 }
 
 .footer-img {
@@ -571,6 +619,20 @@ p {
     align-items: center;
     width: 60%;
     max-width: 350px;
+}
+
+.item-footer {
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 3rem;
+}
+
+.item-footer:hover {
+    padding: 0.7rem;
+    background-color: white;
+    color: black;
+    transition: 0.8s;
 }
 
 /* FOOTER */
