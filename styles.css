@@ -308,11 +308,11 @@ p {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     line-height: 1.1;
-    max-width: 800px;
+    max-width: 500px;
 }
 
 .p-sobremi {
-    max-width: 800px;
+    max-width: 500px;
     font-size: 0.92rem;
     margin: 0 auto;
     letter-spacing: 0.02em;
@@ -349,6 +349,19 @@ p {
     transition: 0.5s;
 }
 
+@media(min-width: 762px) {
+
+    .title-sobremi {
+        font-size: 1.9rem;
+        max-width: 600px;
+    }
+
+    .p-sobremi {
+        max-width: 700px;
+        font-size: 1.1rem;
+    }
+}
+
 @media(min-width: 992px) {
     .sobremi {
         text-align: left;
@@ -367,20 +380,18 @@ p {
     }
 
     .title-sobremi {
-        max-width: 350px;
         font-size: 1.9rem;
         padding: 0;
         max-width: 500px;
     }
 
     .p-sobremi {
-        max-width: 500px;
         font-size: 1.1rem;
         margin: 0 auto;
         letter-spacing: 0.03em;
         margin-top: 1.5rem;
         padding: 0px 15px;
-        max-width: 500px;
+        max-width: 600px;
     }
 }
 
