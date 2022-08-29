@@ -286,6 +286,13 @@ p {
     text-align: center;
 }
 
+.sobremi-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .img-sobremi-pc {
     width: 95%;
     max-width: 850px;
@@ -301,11 +308,11 @@ p {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     line-height: 1.1;
-    max-width: 650px;
+    max-width: 500px;
 }
 
 .p-sobremi {
-    max-width: 650px;
+    max-width: 500px;
     font-size: 1.1rem;
     margin: 0 auto;
     letter-spacing: 0.03em;
@@ -361,7 +368,6 @@ p {
 
     .title-sobremi {
         max-width: 350px;
-        margin-top: 140px;
         font-size: 1.9rem;
         padding: 0;
     }
