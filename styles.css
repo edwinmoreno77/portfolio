@@ -304,6 +304,15 @@ p {
     max-width: 650px;
 }
 
+.p-sobremi {
+    max-width: 650px;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    letter-spacing: 0.03em;
+    margin-top: 1.5rem;
+    padding: 0px 15px;
+}
+
 .button-container {
     display: flex;
     justify-content: center;
