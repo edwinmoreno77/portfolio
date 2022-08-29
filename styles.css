@@ -37,6 +37,7 @@ p {
     --theme-color: linear-gradient(90deg, #0765bd, #4ccffb);
     --theme-color-reverse: linear-gradient(90deg, #4ccffb, #0765bd);
     --theme-color-reverse-transparency: linear-gradient(90deg, #4ccffbe9, #0765bdde);
+    --theme-color-transparency: linear-gradient(90deg, #0765bdde, #4ccffbe9);
     --theme-color-dark: #0765bd;
     --primary-color: #4ccffb;
     --secondary-color: #0765bd;
@@ -57,7 +58,7 @@ p {
 /* NAVBAR  */
 
 .navbar {
-    background: var(--theme-color);
+    background: var(--theme-color-transparency);
     box-shadow: var(--shadow-primary-color) 0px 1px 6px;
     height: 80px;
     position: fixed;
