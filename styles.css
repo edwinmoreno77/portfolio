@@ -338,13 +338,13 @@ p {
     line-height: 2rem;
     margin: 1rem;
     border-radius: 0.7rem;
-    box-shadow: rgba(12, 33, 119, 0.725) 2px 4px 3px 1px;
+    box-shadow: rgba(12, 33, 119, 0.725) 1px 2px 4px 1px;
     color: white;
     background: var(--theme-color);
 }
 
 .button:hover {
-    box-shadow: var(--shadow-primary-color) 2px 4px 3px 1px;
+    box-shadow: var(--shadow-primary-color) 1px 2px 4px 1px;
     filter: brightness(130%);
     transition: 0.5s;
 }
@@ -359,6 +359,10 @@ p {
     .p-sobremi {
         max-width: 700px;
         font-size: 1.1rem;
+    }
+
+    .button {
+        font-size: 1rem;
     }
 }
 
@@ -392,6 +396,11 @@ p {
         margin-top: 1.5rem;
         padding: 0px 15px;
         max-width: 600px;
+    }
+
+    .button {
+        font-size: 1.1rem;
+        padding: 0.2rem 1.2rem;
     }
 }
 
