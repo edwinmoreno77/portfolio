@@ -313,8 +313,8 @@ p {
 
 .p-sobremi {
     max-width: 500px;
-    font-size: 1.1rem;
-    margin: 0 auto;
+    font-size: 0.95rem;
+    /* margin: 0 auto; */
     letter-spacing: 0.03em;
     margin-top: 1.5rem;
     padding: 0px 15px;
@@ -370,6 +370,15 @@ p {
         max-width: 350px;
         font-size: 1.9rem;
         padding: 0;
+    }
+
+    .p-sobremi {
+        max-width: 500px;
+        font-size: 1.1rem;
+        margin: 0 auto;
+        letter-spacing: 0.03em;
+        margin-top: 1.5rem;
+        padding: 0px 15px;
     }
 }
 
