@@ -94,8 +94,10 @@
                         documentación, al principio inicie por curiosidad
                         y desde que empece no he podido parar de aprender e incursionar en este amplio universo.</i>
                 </p>
-                <div class="button-container">
-                    <a class="button" href="#Portafolio"> <i>Ver Portafolio</i></a>
+                <div id="modal">
+                    <div id="ButtomModal" class="button-container">
+                        <a class="button"> <i>Ver Curriculum</i></a>
+                    </div>
                 </div>
             </div>
             <div class="sobremi-img">
@@ -123,11 +125,8 @@
                     rel="noopener noreferrer">
                     <img class="img-habilidades" src="assets/javascript.png" alt="programador">
                 </a>
-                <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                    <img class="img-habilidades" src="assets/bootstrap-logo-shadow.png" alt="programador">
-                </a>
-                <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
-                    <img class="img-habilidades" src="assets/logo-git.png" alt="programador">
+                <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-habilidades" src="assets/typescript-1024.png" alt="programador">
                 </a>
                 <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
                     <img class="img-habilidades" src="assets/react.png" alt="programador">
@@ -135,29 +134,49 @@
                 <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">
                     <img class="img-habilidades" src="assets/nodejs.png" alt="programador">
                 </a>
+                <a href="http://expressjs.com" target="_blank" rel="noopener noreferrer">
+                    <img class="img-habilidades" src="assets/express-2.png" alt="programador">
+                </a>
                 <a href="https://www.mongodb.com/es" target="_blank" rel="noopener noreferrer">
                     <img class="img-habilidades" src="assets/mongodb_compass.png" alt="programador">
                 </a>
                 <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
                     <img class="img-habilidades" src="assets/Redux.png" alt="programador">
                 </a>
+                <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-habilidades" src="assets/bootstrap-logo-shadow.png" alt="programador">
+                </a>
                 <a href="https://mui.com/" target="_blank" rel="noopener noreferrer">
                     <img class="img-habilidades" src="assets/material-ui-logo.png" alt="programador">
+                </a>
+                <a href="https://styled-components.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-habilidades" src="assets/styled-components-color.png" alt="programador">
+                </a>
+                <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-habilidades" src="assets/tailwind.png" alt="programador">
+                </a>
+                <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-habilidades" src="assets/logo-git.png" alt="programador">
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-habilidades" src="assets/github.png" alt="programador">
+                </a>
+                <a href="https://about.gitlab.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-habilidades" src="assets/gitlab.png" alt="programador">
+                </a>
+                <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">
+                    <img class="img-habilidades" src="assets/JEST.png" alt="programador">
                 </a>
                 <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">
                     <img class="img-habilidades" src="assets/firebase.png" alt="programador">
                 </a>
-                <a href="https://heroku.com" target="_blank" rel="noopener noreferrer">
-                    <img class="img-habilidades Heroku" src="assets/Heroku.png" alt="programador">
-                </a>
                 <a href="https://cloudinary.com/" target="_blank" rel="noopener noreferrer">
                     <img class="img-habilidades" src="assets/cloudinary.png" alt="programador">
                 </a>
-                <a href="http://expressjs.com" target="_blank" rel="noopener noreferrer">
-                    <img class="img-habilidades express" src="assets/express.png" alt="programador">
+                <a href="https://heroku.com" target="_blank" rel="noopener noreferrer">
+                    <img class="img-habilidades " src="assets/Heroku.png" alt="programador">
                 </a>
             </div>
-        </div>
     </section>
     <!-- HABILIDADES  -->
 
@@ -184,7 +203,7 @@
                             rel="noopener noreferrer" aria-label="github">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a class="link-item" href="https://pasteleria-fatima.herokuapp.com/homePage" target="_blank"
+                        <a class="link-item" href="https://fatima-app-backend.vercel.app" target="_blank"
                             rel="noopener noreferrer" aria-label="page">
                             <i class="fa-brands fa-chrome"></i>
                         </a>
@@ -292,10 +311,6 @@
                             rel="noopener norfooterrrer" aria-label="github">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a class="link-item" href="https://webapp-prueba.herokuapp.com/" target="_blank"
-                            rel="noopener noreferrer" aria-label="page">
-                            <i class="fa-brands fa-chrome"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -371,7 +386,16 @@
             </ul>
         </div>
     </footer>
-    <!-- FOOTER -->
+
+    <!-- MODAL -->
+    <div id="myModal" class="modalContainer">
+        <div class="modal-content">
+            <span class="close">X</span>
+            <object class="pdf" data="assets/CV-Edwin-Moreno-nov.pdf" type="application/pdf">
+        </div>
+    </div>
+    <!-- MODAL -->
+
 </body>
 
 </html>
