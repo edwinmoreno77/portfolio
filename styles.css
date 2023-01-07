@@ -754,12 +754,12 @@ p {
 .modalContainer .close {
   color: rbg(192, 40, 40);
   float: right;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   background-color: #fff;
   box-shadow: #024075 0 0 6px 0px;
-  padding: 10px;
-  border-radius: 55px;
+  padding: 10px 17px 10px 17px;
+  border-radius: 50%;
 }
 
 .close:hover {
