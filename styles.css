@@ -18,8 +18,6 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
-
-  /*este pading de 90px es por la propiedad fixed de la barra de navegación*/
   padding: 90 0px;
   background-color: rgb(253, 253, 253);
 }
@@ -111,7 +109,7 @@ p {
 
 .nav-item {
   font-size: 16px;
-  margin: 0 3px;
+  margin: 0 5px;
   line-height: 80px;
   text-transform: uppercase;
   width: max-content;
@@ -216,16 +214,37 @@ p {
 .container-inicio {
   background: var(--theme-color);
   display: flex;
-  flex-wrap: wrap;
-  place-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   min-height: 100vh;
   padding: 0;
   margin: 0;
 }
 
+.container-inicio img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22rem;
+  border-radius: 50%;
+}
+
+.img_inicio_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+.nav_menu_inicio {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 .title-inicio {
-  flex: 1;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 800;
   letter-spacing: -0.09em;
   text-align: center;
@@ -247,9 +266,31 @@ p {
   inset: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animated 9s infinite;
+  animation: animated 8s infinite;
   animation-delay: var(--delay);
 }
+
+.indicador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+}
+
+.flecha {
+  font-size: 3rem; 
+  animation: salto 1.8s infinite ease-in-out; 
+}
+
+@keyframes salto {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+}
+
 
 @keyframes animated {
   0%,
@@ -268,6 +309,16 @@ p {
   .title-inicio {
     font-size: 5rem;
   }
+  .container-inicio  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .container-inicio img {
+    width: 15rem;
+    border-radius: 50%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -280,21 +331,32 @@ p {
 
 /* SOBREMI */
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
 .sobremi {
+  background: var(--theme-color);
   text-align: center;
+  font-family: 'Lora', serif;
+  padding-bottom: 100px;
+  padding-top: 5px;
+}
+
+.sobremi img {
+  border-radius: 50%;
 }
 
 .h1-sobremi {
-  background: var(--theme-color);
+  background: white;
   text-align: center;
   font-size: 2.1rem;
   letter-spacing: -0.06em;
   margin: 0 auto;
   margin-top: 3rem;
-  padding: 0px 15px;
+  padding: 30px 15px;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  line-height: 1.1;
+  line-height: 1.6;
+
   max-width: 500px;
 }
 
@@ -311,7 +373,7 @@ p {
 }
 
 .title-sobremi {
-  background: var(--theme-color);
+  background: white;
   font-size: 1.8rem;
   letter-spacing: -0.06em;
   margin: 0 auto;
@@ -324,15 +386,16 @@ p {
 }
 
 .p-sobremi {
+  color:white;
   max-width: 500px;
   font-size: 0.92rem;
   margin: 0 auto;
   letter-spacing: 0.02em;
   margin-top: 1.5rem;
   padding: 0px 15px;
+  line-height: 1.3;
 }
-
-.button-container {
+.b01utto01n-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,8 +507,6 @@ p {
 }
 
 .habilidades {
-  margin-top: 3rem;
-  padding-top: 4rem;
   text-align: center;
 }
 
@@ -566,8 +627,10 @@ p {
 
 .carta {
   position: relative;
-  width: 310px;
-  height: 340px;
+  cursor: pointer;
+  /* width: 310px; */
+  width: 550px;
+  height:250px;
   margin: 15px;
   padding: 10px;
 }
@@ -591,7 +654,7 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .carta .frontal h3 {
@@ -718,74 +781,20 @@ p {
   transition: 0.8s;
 }
 
+.email-button {
+  display: inline-block;
+  background-color: #03c279;
+  color: white;
+  margin-top: 10px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.email-button:hover {
+  background-color: #028c5f;
+  transform: scale(1.1);
+}
 /* FOOTER */
-
-/*MODAL*/
-
-/* PDF CV */
-.pdf {
-  margin: auto;
-  display: block;
-  width: 90%;
-  padding: 20px;
-  height: calc(100vh - 250px);
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-/* PDF CV */
-
-.modalContainer {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modalContainer .modal-content {
-  background-color: var(--theme-color);
-  margin: auto;
-  padding: 15px;
-}
-.modalContainer .close {
-  color: rbg(192, 40, 40);
-  float: right;
-  font-size: 24px;
-  font-weight: bold;
-  background-color: #fff;
-  box-shadow: #024075 0 0 6px 0px;
-  padding: 10px 17px 10px 17px;
-  border-radius: 50%;
-}
-
-.close:hover {
-  background-color: #0092d6;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modalContainer .close:hover,
-.close:focus {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.ButtomModal {
-  background-color: var(--theme-color);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 15px;
-  font-size: 22px;
-  cursor: pointer;
-  transition: 0.5s;
-  box-shadow: #03c279 0 0 15px 0px;
-}
-
-/*MODAL*/
