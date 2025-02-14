@@ -20,13 +20,9 @@
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="container-nav">
-            <div class="nav-logo">
-                <div class="nav-user-em">
-                    <h1 class="navbar-title">
-                        < EM />
-                    </h1>
-                </div>
-            </div>
+            <h1 class="navbar-title">
+                < EM />
+            </h1>
             <div type="button" class="nav-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -44,8 +40,8 @@
     <main id="Inicio">
         <div class="container-inicio">
             <div class="img_inicio_container">
-                <img class="img-inicio" src="assets/edwin_img.jpg" alt="imagen de edwin">
-                <ul class="nav_menu_inicio">
+                <img class="img-inicio animate__animated animate__fadeIn" src="assets/edwin_img.jpg" alt="imagen de edwin">
+                <ul class="nav_menu_inicio animate__animated animate__fadeIn">
                     <li class="nav-item">
                         <a class="item" href="https://github.com/edwinmoreno77" target="_blank" rel="noopener noreferrer"
                             aria-label="github"><i class="fa-brands fa-github"></i>
@@ -64,6 +60,8 @@
                         </a>
                     </li>
                 </ul>
+                <a class="button" href="assets/edwin-cv.pdf" download="edwin-cv.pdf">Curriculum</a>
+
             </div>
             <h1 class="title-inicio animate__animated animate__fadeIn">
                 <span style='--content:"Hola!" ; --start-color:  #fa6000; --end-color: #ffcf23; --delay: 0s;'
@@ -80,6 +78,15 @@
             <span class="flecha">⬇️</span>
         </div>      
     </main>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+        <defs>
+          <linearGradient id="gradFondo" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0a1833" />
+            <stop offset="100%" stop-color="#000000" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#gradFondo)" fill-opacity="1" d="M0,64L120,69.3C240,75,480,85,720,80C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+      </svg>
     <!-- INICIO  -->
     
     <!-- PORTAFOLIO -->
@@ -262,7 +269,61 @@
     </section>
     <!-- PORTAFOLIO -->
 
+    <!-- EXPERIENCIA -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
+        <defs>
+          <linearGradient id="gradFondo" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0a1833" />
+            <stop offset="100%" stop-color="#000000" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#gradFondo)" fill-opacity="1" d="M0,160L80,160C160,160,320,160,480,144C640,128,800,96,960,85.3C1120,75,1280,85,1360,90.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+      </svg>
+    <article class="experiencia_laboral">
+        <h2 class="exp_h2">Experiencia Laboral</h2>
+        <div class="timeline">
+          <div class="timeline-item active">
+            <h3>Full Stack Developer - Autónomo</h3>
+            <span>feb. 2022 - actualidad (3 años 1 mes) · Chile</span>
+            <p>
+                Durante este período, gestioné mi tienda en Shopify y desarrollé proyectos a medida fuera de ese ecosistema. Diseñé aplicaciones y plataformas personalizadas con tecnologías como React, Next.js, Node.js (Express) y Python (Flask), utilizando frameworks como Tailwind, Bootstrap y MUI, además de Redux Toolkit para optimizar la experiencia del usuario.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Secretario técnico - Vopexa Industrial</h3>
+            <span>feb. 2023 - ene. 2024 (1 año) · Antofagasta, Región de Antofagasta, Chile · Presencial</span>
+            <p>
+              Participé en el montaje electromecánico en SQM Salar del Carmen, encargándome de la interpretación de planos, elaboración y protocolización de procedimientos, y generación de informes diarios de avances. Además, realicé reportes detallados de horas hombre y gestioné documentación para la prevención de riesgos laborales, asegurando el cumplimiento de las normativas de seguridad.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Full Stack Developer - Hostyweb spa</h3>
+            <span>oct. 2022 - feb. 2023 (5 meses) · Región de Coquimbo, Chile</span>
+            <p>
+              Participé en el desarrollo del frontend para un sistema ERP, realizando la configuración inicial del software y la creación de componentes personalizados con React, TypeScript y Styled Components. Mis responsabilidades incluyeron la elaboración del layout (Header y Sidebar), configuración de rutas con React Router, implementación de funcionalidades clave como login y registro de usuarios, y la integración de Redux Toolkit para el manejo del estado. Asimismo, desarrollé pruebas unitarias utilizando Jest y React Testing Library, y definí modelos y tipado en TypeScript.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Administrador de contrato - CORMENCA</h3>
+            <span>ene. 2017 - 2018 (1 año 1 mes) · Venezuela</span>
+            <p>
+              Encargado de la gestión y cumplimiento del contrato con la empresa estatal petroquímica PEQUIVEN. Supervisé el desempeño del equipo, coordiné el mantenimiento de la flota vehicular y equipos, y aseguré el cumplimiento de metas, garantizando la operatividad y seguridad en un entorno de alta exigencia.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Oficial de Comando - Guardia Nacional de Venezuela</h3>
+            <span>jul. 2011 - nov. 2016 (5 años 5 meses) · Venezuela</span>
+            <p>
+              Desempeñé roles de liderazgo y operativos, combinando funciones administrativas en recursos humanos, seguridad y operaciones con la responsabilidad de pilotar aviones de ala fija en diversas unidades aéreas. Esta experiencia fortaleció mis habilidades en gestión de equipos y toma de decisiones en situaciones críticas.
+            </p>
+          </div>
+        </div>
+    </article>
+    
+    <!-- EXPERIENCIA -->
+
     <!-- SOBRE MI  -->
+   
     <section id="Sobremi" class="sobremi">
         <h1 class="h1-sobremi">
             <p>UN POCO SOBRE MI</p>
@@ -270,7 +331,7 @@
         <div class="sobremi-container">
             <div class="sobremi-text">
                 <h1 class="title-sobremi">
-                    <p>Apasionado por la tecnología</p>
+                    Apasionado por la tecnología
                 </h1>
                 <p class="p-sobremi">
                     Soy un desarrollador con un fuerte enfoque en el aprendizaje continuo. Desde que inicié en el mundo de la programación, he trabajado en diversos proyectos, creando desde interfaces intuitivas hasta aplicaciones dinámicas y funcionales.
@@ -278,18 +339,22 @@
                 <p class="p-sobremi">
                     Me encanta transformar ideas en código, aplicando buenas prácticas y manteniéndome al día con las últimas tecnologías para construir soluciones innovadoras, eficientes y escalables.
                 </p>
-                
-                <div id="modal">
-                    <div id="ButtomModal" class="button-container">
-                        <a class="button" href="assets/edwin-cv.pdf" download="edwin-cv.pdf">Descargar Curriculum</a>
-                    </div>
-                </div>
+                <a class="button" href="assets/edwin-cv.pdf" download="edwin-cv.pdf">Descargar Curriculum</a>
             </div>
             <div class="sobremi-img">
                 <img class="img-sobremi-pc" src="assets/fondo-inicio.jpeg" alt="programador">
             </div>
         </div>
     </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+        <defs>
+          <linearGradient id="gradFondo" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0a1833" />
+            <stop offset="100%" stop-color="#000000" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#gradFondo)" fill-opacity="1" d="M0,64L120,69.3C240,75,480,85,720,80C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+    </svg>
     <!-- SOBRE MI  -->
 
     <!-- HABILIDADES  -->
@@ -370,6 +435,15 @@
     <!-- HABILIDADES  -->
 
     <!-- FOOTER -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+        <defs>
+          <linearGradient id="gradFondo" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0a1833" />
+            <stop offset="100%" stop-color="#000000" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#gradFondo)" fill-opacity="1" d="M0,160L80,160C160,160,320,160,480,144C640,128,800,96,960,85.3C1120,75,1280,85,1360,90.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+      </svg>
     <footer id="Contactos">
         <div class="container-footer">
             <div class="footer-title">
@@ -396,7 +470,7 @@
             </ul>
              <!-- Sección de Contacto por Email -->
         <div class="contact-email">
-            <a href="mailto:edwinmoreno77@gmail.com" class="email-button">
+            <a href="mailto:edwinmoreno77@gmail.com" class="button">
                 📧 Enviar Email
             </a>
         </div>
