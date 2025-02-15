@@ -348,13 +348,12 @@ a {
   filter: brightness(140%);
 }
 
-/* Marcador (círculo) centrado en la línea */
 .timeline-item::before {
   content: "";
   position: absolute;
   width: 16px;
   height: 16px;
-  background: #ffd828;
+  background:  rgb(255, 166, 0);
   border: 3px solid #333;
   border-radius: 50%;
   left: -100px;
@@ -363,7 +362,7 @@ a {
 .timeline-item h3 {
   margin: 0 0 5px;
   font-size: 1.2em;
-  color: rgb(255, 213, 0);
+  color: rgb(255, 166, 0);
 }
 .timeline-item h2 {
   text-align: center;
@@ -381,6 +380,26 @@ a {
   font-size: 1em;
   line-height: 1.4em;
   color: white
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    margin-left: 30px;
+  }
+  .timeline-item::before {
+    left: -30px;
+  }
+  .timeline::before {
+    left: 8px;
+  }
+  .experiencia_laboral{
+    padding: 10px;
+  }
+
+  .exp_h2{
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
 }
 
 /* EXPERIENCIA */
@@ -407,7 +426,7 @@ a {
 
 
 .h1-sobremi {
-  background: white;
+  color: white;
   text-align: center;
   font-size: 2.1rem;
   letter-spacing: -0.06em;
@@ -636,13 +655,9 @@ a {
 .titulo-portafolio {
   display: flex;
   justify-content: center;
-  background: var(--theme-color);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: -0.06em;
   margin: 0 auto;
-  margin-bottom: 3rem;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   line-height: 1.1;
 }
 
@@ -763,6 +778,35 @@ a {
 .carta:hover .trasera {
   transform: perspective(600px) rotateY(360deg);
 }
+
+@media (max-width: 768px) {
+  .carta {
+    width: 350px;
+    height: 160px;
+  }
+  .portafolio {
+    margin: 10px auto;
+  }
+
+  .carta .frontal h3 {
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .carta .trasera .link {
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .carta .trasera .link h3 {
+    font-size: 20px;
+  }
+
+  .carta .trasera p {
+    font-size: 12px;
+  }
+}
+
 
 /* CARTA */
 
