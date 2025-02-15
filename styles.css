@@ -54,7 +54,7 @@ a {
 /* NAVBAR  */
 
 .navbar {
-  background: linear-gradient(180deg, #000000, #020811);
+  background: linear-gradient(180deg, #000000, #071d3f);
   box-shadow: var(--shadow-primary-color) 0px 1px 5px;
   height: 60px;
   position: fixed;
@@ -63,6 +63,8 @@ a {
   left: 0;
   z-index: 100;
 }
+
+
 
 .container-nav {
   display: flex;
@@ -197,10 +199,9 @@ a {
 .container-inicio {
   background: var(--theme-color);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  min-height: 75vh;
-  gap: 100px;
+  min-height: 78vh;
   margin: 0;
 }
 
@@ -308,7 +309,7 @@ a {
 
 .timeline {
   position: relative;
-  max-width: 800px;
+  max-width: 1100px;
   margin: auto;
 }
 /* Línea vertical */
@@ -321,6 +322,7 @@ a {
   width: 2px;
   background: #878787;
 }
+
 .timeline-item {
   position: relative;
   color: white;
@@ -684,9 +686,8 @@ a {
 .carta {
   position: relative;
   cursor: pointer;
-  /* width: 310px; */
-  width: 550px;
-  height:250px;
+  width: 600px;
+  height:270px;
   margin: 15px;
   padding: 10px;
 }
@@ -815,6 +816,17 @@ a {
   color: #fff;
   font-size: 10px;
 }
+
+.footer-title h1 {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+
 
 .footer-img {
   display: flex;
