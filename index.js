@@ -7,14 +7,6 @@ navToggle.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", () => {
-  //SOBRE MI
-  let imgSobreMi = document.querySelector(".img-sobremi-pc");
-  let position = imgSobreMi.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight / 1.05;
-
-  if (position < screenPosition) {
-    imgSobreMi.style.animation = "scroll 2s ease-out";
-  }
   //HABILIDADES
   let habilidadesImg = document.querySelector(".habilidades-links");
   let positionHabilidades = habilidadesImg.getBoundingClientRect().top;
@@ -32,22 +24,3 @@ window.addEventListener("scroll", () => {
     portafolio.style.animation = "scroll 1.5s ease-out";
   }
 });
-
-//CURRICULUM
-
-//MODAL
-
-// const divModal = document.getElementById('modal');
-// const modalContainer = document.getElementById('myModal');
-// const modalContent = document.querySelector('.modal-content');
-// const close = document.querySelector('.close');
-// const btnModal = document.querySelector('#ButtomModal');
-
-// btnModal.addEventListener('click', () => {
-//     modalContainer.style.display = 'block';
-
-// });
-
-// close.addEventListener('click', () => {
-//     modalContainer.style.display = 'none';
-// });
