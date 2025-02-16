@@ -1,8 +1,13 @@
 //Boton de Menu del navbar
 const navToggle = document.querySelector(".nav-toggle");
+const toggle = document.querySelector(".toggle");
 const navMenu = document.querySelector(".nav-menu");
 
 navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("nav-menu_visible");
+});
+
+toggle.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
 });
 
