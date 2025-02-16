@@ -341,7 +341,7 @@ a {
   box-shadow: 2px 2px 8px rgba(13, 104, 201, 0.741);
   cursor: pointer;
   filter: brightness(120%);
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 .active{
