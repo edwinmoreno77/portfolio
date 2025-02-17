@@ -198,7 +198,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 11rem;
+  width: 10rem;
   border-radius: 50%;
   border: solid 2px white
 }
@@ -236,7 +236,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  justify-content: center;
+  padding-top: 110px;
 }
 
 .social_item{
