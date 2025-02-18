@@ -245,7 +245,6 @@ a {
   padding:20px 0;
 }
 .social{
-  text-decoration: none;
   color: white;
   padding: 0.5rem 0.6rem;
   border-radius: 100%;
@@ -373,6 +372,7 @@ a {
 @media (max-width: 768px) {
   .timeline-item {
     margin-left: 30px;
+    font-size: 0.75em;
   }
   .timeline-item::before {
     left: -30px;
