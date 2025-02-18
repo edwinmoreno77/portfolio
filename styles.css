@@ -412,9 +412,10 @@ a {
   height: auto;
   max-width: 900px; 
   object-fit: cover; 
-  filter: brightness(110%);
+  transform: rotate(5deg);
+  cursor: pointer;
+  filter: brightness(90%);
 }
-
 
 .h1-sobremi {
   color: white;
@@ -559,7 +560,6 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   max-width: 900px;
 }
 
@@ -569,10 +569,10 @@ a {
 }
 
 .img-habilidades {
-  width: 80px;
-  max-width: 6rem;
-  padding: 10px;
-  margin: 10px;
+  width: 50px;
+  max-width: 4rem;
+  padding: 1px;
+  margin: 1px;
   filter: brightness(97%);
   transition: 0.4s ease-in-out;
 }
@@ -594,16 +594,13 @@ a {
 }
 
 .title-habilidades {
-  background: var(--theme-color);
-  font-size: 2rem;
+  color: black;
+  text-align: center;
+  font-size: 1.4rem;
   letter-spacing: -0.06em;
   margin: 0 auto;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  line-height: 1.1;
-  max-width: 950px;
+  padding: 15px;
+  line-height: 1.6;
 }
 
 .habilidades-logo-circulo {
@@ -613,6 +610,13 @@ a {
 @media (min-width: 762px) {
   .title-habilidades {
     font-size: 2.3rem;
+  }
+
+  .img-habilidades {
+    width: 80px;
+    max-width: 6rem;
+    padding: 4px;
+    margin: 4px;
   }
 }
 
@@ -625,12 +629,12 @@ a {
   .habilidades-links {
     max-width: 800px;
   }
-}
 
+  
+}
 /* HABILIDADES */
 
 /* PORTAFOLIO */
-
 .titulo-portafolio {
   display: flex;
   justify-content: center;
