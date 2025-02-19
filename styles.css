@@ -192,6 +192,7 @@ a {
   min-height: 78vh;
   height: 78vh;
   margin: 0;
+  margin-bottom: -5px;
 }
 
 .container-inicio img {
@@ -280,6 +281,166 @@ a {
 }
 /* INICIO */
 
+/* PROJECTS */
+
+.titulo-portafolio {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  letter-spacing: -0.06em;
+  margin: 0 auto;
+  line-height: 1.1;
+}
+
+@media (min-width: 762px) {
+  .titulo-portafolio {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .titulo-portafolio {
+    font-size: 1.65rem;
+  }
+}
+
+.portafolio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  gap: 20px;
+}
+
+/* CART */
+
+.carta {
+  position: relative;
+  cursor: pointer;
+  width: 600px;
+  height:270px;
+}
+
+.carta .cara {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.carta .frontal {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 4px 7px rgb(100, 100, 100);
+}
+
+.carta .frontal img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carta .frontal h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.carta .trasera {
+  transform: perspective(600px) rotateY(180deg);
+  background: var(--theme-color);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 4px 7px rgb(100, 100, 100);
+}
+
+.carta .trasera .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.link-item {
+  filter: brightness(90%);
+  font-size: 30px;
+  padding: 12px;
+}
+
+.link-item:hover {
+  filter: brightness(165%);
+}
+
+.carta-texto {
+  color: #fff;
+}
+
+.carta .trasera .link a {
+  color: #f3f3f3;
+}
+
+.carta .trasera .link h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.carta .trasera p {
+  letter-spacing: 1px;
+}
+
+.carta:hover .frontal {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.carta:hover .trasera {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+@media (max-width: 768px) {
+  .carta {
+    width: 350px;
+    height: 160px;
+  }
+  .carta .frontal h3 {
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .carta .trasera .link {
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .carta .trasera .link h3 {
+    font-size: 20px;
+  }
+
+  .carta .trasera p {
+    font-size: 12px;
+  }
+
+  .link-item {
+    font-size: 20px;
+  }
+}
+
+/* CART */
+
+/* PROJECTS */
+
 
 /* EXPERIENCIA */
 
@@ -304,7 +465,7 @@ a {
 .timeline::before {
   content: "";
   position: absolute;
-  left: 51.5px; /* Posición de la línea vertical */
+  left: 51.5px; 
   top: 0;
   bottom: 0;
   width: 2px;
@@ -398,6 +559,7 @@ a {
   background: var(--theme-color-tertiary);
   text-align: center;
   padding: 10px 20px;
+  margin-bottom: -5px;
 }
 
 .sobremi-img {
@@ -435,12 +597,12 @@ a {
 
 .p-sobremi {
   color: rgb(206, 203, 203);
-  max-width: 900px;
+  max-width: 90ch;
   font-size: 1rem;
-  padding: 0px 20px;
+  /* padding: 0px 20px; */
   line-height: 1.3;
   flex-wrap: wrap;
-  text-align: justify;
+  text-align: left;
 }
 
 .p-sobremi strong{
@@ -638,169 +800,6 @@ a {
 }
 /* HABILIDADES */
 
-/* PORTAFOLIO */
-.titulo-portafolio {
-  display: flex;
-  justify-content: center;
-  font-size: 1.2rem;
-  letter-spacing: -0.06em;
-  margin: 0 auto;
-  line-height: 1.1;
-}
-
-@media (min-width: 762px) {
-  .titulo-portafolio {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .titulo-portafolio {
-    font-size: 1.65rem;
-  }
-}
-
-/* CARTA */
-
-.portafolio {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 40px auto;
-  gap: 20px;
-}
-
-.carta {
-  position: relative;
-  cursor: pointer;
-  width: 600px;
-  height:270px;
-}
-
-.carta .cara {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.carta .frontal {
-  transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0 4px 7px rgb(100, 100, 100);
-}
-
-.carta .frontal img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.carta .frontal h3 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-
-.carta .trasera {
-  transform: perspective(600px) rotateY(180deg);
-  background: var(--theme-color);
-  padding: 15px;
-  color: #f3f3f3;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  box-shadow: 0 4px 7px rgb(100, 100, 100);
-}
-
-.carta .trasera .link {
-  border-top: solid 1px #f3f3f3;
-  height: 50px;
-  line-height: 50px;
-}
-
-.link-item {
-  filter: brightness(90%);
-  font-size: 30px;
-  padding: 12px;
-}
-
-.link-item:hover {
-  filter: brightness(165%);
-}
-
-.carta-texto {
-  color: #fff;
-}
-
-.carta .trasera .link a {
-  color: #f3f3f3;
-}
-
-.carta .trasera .link h3 {
-  font-size: 30px;
-  margin-top: 20px;
-  letter-spacing: 2px;
-}
-
-.carta .trasera p {
-  letter-spacing: 1px;
-}
-
-.carta:hover .frontal {
-  transform: perspective(600px) rotateY(180deg);
-}
-
-.carta:hover .trasera {
-  transform: perspective(600px) rotateY(360deg);
-}
-
-@media (max-width: 768px) {
-  .carta {
-    width: 350px;
-    height: 160px;
-  }
-  /* .portafolio {
-    margin: 10px auto;
-  } */
-
-  .carta .frontal h3 {
-    height: 30px;
-    line-height: 30px;
-  }
-
-  .carta .trasera .link {
-    height: 30px;
-    line-height: 30px;
-  }
-
-  .carta .trasera .link h3 {
-    font-size: 20px;
-  }
-
-  .carta .trasera p {
-    font-size: 12px;
-  }
-
-  .link-item {
-    font-size: 20px;
-  }
-}
-
-
-/* CARTA */
-
-/* PORTAFOLIO */
 
 /* FOOTER */
 
