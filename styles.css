@@ -210,7 +210,6 @@ a {
   padding: 0;
   list-style: none;
 }
-
 .title_init {
   display: flex;
   flex-direction: column;
@@ -230,7 +229,6 @@ a {
 
 .title_init strong{
   color: #fab700;
-
 }
 
 .img_inicio_container{
@@ -245,6 +243,7 @@ a {
   font-size: 16px;
   padding:20px 0;
 }
+
 .social{
   color: white;
   padding: 0.5rem 0.6rem;
@@ -256,6 +255,11 @@ a {
   background-color: white;
   color: black;
   transition: 0.5s;
+}
+
+.location{
+  color: rgb(212, 211, 211);
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -272,7 +276,9 @@ a {
   .title_init p {
     font-size: 1rem;
     max-width: 300px;
-
+  }
+  .location{
+    font-size: 0.8rem;
   }
 
   .title_init  {
