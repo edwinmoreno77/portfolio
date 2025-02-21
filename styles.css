@@ -258,7 +258,7 @@ a {
 }
 
 .location{
-  color: rgb(212, 211, 211);
+  color: rgba(212, 211, 211, 0.667);
   font-size: 1rem;
   padding-top: 5px;
 }
