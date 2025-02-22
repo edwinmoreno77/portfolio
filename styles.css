@@ -712,7 +712,7 @@ a {
 
 .habilidades-container {
   min-height: 300px;
-  background: url("assets/fondo-2.jpeg") no-repeat center center ;
+  background: url("assets/fondo-2.webp") no-repeat center center ;
   background-size: 600px;
   display: flex;
   flex-wrap: wrap;
