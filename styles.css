@@ -712,7 +712,7 @@ a {
 
 .habilidades-container {
   min-height: 300px;
-  background: url("assets/fondo-2.webp") no-repeat center center ;
+  /* background: url("assets/fondo-2.webp") no-repeat center center ; */
   background-size: 600px;
   display: flex;
   flex-wrap: wrap;
@@ -746,8 +746,7 @@ a {
   max-width: 4rem;
   padding: 1px;
   margin: 1px;
-  filter: brightness(97%);
-  transition: 0.4s ease-in-out;
+  filter: grayscale(100%);
 }
 
 .heroku {
@@ -756,6 +755,9 @@ a {
 
 .img-habilidades:hover {
   filter: brightness(120%);
+  filter: grayscale(10%);
+  scale: 1.2;
+  transition: 0.18s ease-in-out;
 }
 
 .title-habilidades {
@@ -801,7 +803,7 @@ a {
   }
 
   .habilidades-links {
-    max-width: 1000px;
+    max-width: 800px;
   }
 
   
