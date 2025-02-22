@@ -843,7 +843,7 @@ a {
   font-size: 10px;
 }
 
-.footer-title h1 {
+.footer-title h2 {
   display: block;
   justify-content: center;
   text-align: center;
@@ -877,7 +877,7 @@ a {
 }
 
 @media (max-width: 768px) {
-  .footer-title h1 {
+  .footer-title h2 {
     font-size: 1.3rem;
   }
   .footer-title {
