@@ -29,3 +29,28 @@ window.addEventListener("scroll", () => {
     portafolio.style.animation = "scroll 1.5s ease-out";
   }
 });
+
+//  CERTIFICACIONES
+const carousel = document.getElementById("carousel");
+const items = document.querySelectorAll(".carousel-item");
+
+function moveSlide(direction, event) {
+  if (event) event.preventDefault();
+
+  const itemWidth = items[0].offsetWidth; // Ancho de un elemento
+  const maxScroll = carousel.scrollWidth - carousel.clientWidth; // Máximo scroll posible
+  let newScroll = carousel.scrollLeft + itemWidth * direction;
+
+  // Ajustar newScroll para que no se pase de los límites
+  if (newScroll < 0) {
+    newScroll = 0; // Bloquear al inicio
+  } else if (newScroll > maxScroll) {
+    newScroll = maxScroll; // Bloquear al final
+  }
+
+  // Mover suavemente
+  carousel.scrollTo({
+    left: newScroll,
+    behavior: "smooth",
+  });
+}
