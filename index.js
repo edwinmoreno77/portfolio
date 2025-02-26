@@ -1,16 +1,3 @@
-//Boton de Menu del navbar
-const navToggle = document.querySelector(".nav-toggle");
-const toggle = document.querySelector(".toggle");
-const navMenu = document.querySelector(".nav-menu");
-
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("nav-menu_visible");
-});
-
-toggle.addEventListener("click", () => {
-  navMenu.classList.toggle("nav-menu_visible");
-});
-
 window.addEventListener("scroll", () => {
   //HABILIDADES
   let habilidadesImg = document.querySelector(".habilidades-links");
@@ -54,3 +41,35 @@ function moveSlide(direction, event) {
     behavior: "smooth",
   });
 }
+
+// navbar
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".navbar a");
+
+  function setActiveLink() {
+    let index = sections.length;
+
+    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+    navLinks.forEach((link) => link.classList.remove("active"));
+    navLinks[index].classList.add("active");
+  }
+
+  setActiveLink();
+  window.addEventListener("scroll", setActiveLink);
+
+  // Desplazamiento suave al hacer clic en los enlaces del navbar
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: "smooth",
+      });
+    });
+  });
+});
