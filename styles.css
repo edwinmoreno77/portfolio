@@ -380,6 +380,17 @@ a {
   }
 }
 
+@keyframes scroll {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* CART */
 
 /* PROJECTS */
@@ -428,6 +439,12 @@ a {
   margin-left: 144px;
   /* Espacio para el marcador y la línea */
   filter: brightness(90%);
+  opacity: 0;
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.timeline-item.scroll {
+  animation: scroll 1.5s ease-out forwards;
 }
 
 .timeline-item:hover {

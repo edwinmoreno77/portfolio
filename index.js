@@ -1,5 +1,5 @@
 window.addEventListener("scroll", () => {
-  //HABILIDADES
+  // HABILIDADES
   let habilidadesImg = document.querySelector(".habilidades-links");
   let positionHabilidades = habilidadesImg.getBoundingClientRect().top;
   let screenPositionH = window.innerHeight / 1.02;
@@ -7,7 +7,8 @@ window.addEventListener("scroll", () => {
   if (positionHabilidades < screenPositionH) {
     habilidadesImg.style.animation = "scroll 1.5s ease-out";
   }
-  //PORTAFOLIO
+
+  // PORTAFOLIO
   let portafolio = document.querySelector(".portafolio");
   let positionPortafolio = portafolio.getBoundingClientRect().top;
   let screenPositionP = window.innerHeight / 1.02;
@@ -15,8 +16,36 @@ window.addEventListener("scroll", () => {
   if (positionPortafolio < screenPositionP) {
     portafolio.style.animation = "scroll 1.5s ease-out";
   }
-});
 
+  // TIMELINE
+  let timelineItems = document.querySelectorAll(".timeline-item");
+  timelineItems.forEach((item) => {
+    let positionTimeline = item.getBoundingClientRect().top;
+    let screenPositionT = window.innerHeight / 1.2;
+
+    if (positionTimeline < screenPositionT) {
+      item.classList.add("scroll");
+    }
+  });
+
+  // SOBRE MÍ
+  let sobremiContainer = document.querySelector(".sobremi-container");
+  let positionSobremi = sobremiContainer.getBoundingClientRect().top;
+  let screenPositionS = window.innerHeight / 1.02;
+
+  if (positionSobremi < screenPositionS) {
+    sobremiContainer.style.animation = "scroll 1.5s ease-out";
+  }
+
+  // CAROUSEL
+  let carousel = document.querySelector(".carousel-container");
+  let positionCarousel = carousel.getBoundingClientRect().top;
+  let screenPositionC = window.innerHeight / 1.02;
+
+  if (positionCarousel < screenPositionC) {
+    carousel.style.animation = "scroll 1.5s ease-out";
+  }
+});
 //  CERTIFICACIONES
 const carousel = document.getElementById("carousel");
 const items = document.querySelectorAll(".carousel-item");
