@@ -60,7 +60,7 @@ a {
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
-  padding: 10px;
+  padding: 20px 10px;
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -78,7 +78,7 @@ a {
   border-radius: 0.32rem;
 }
 
-.navbar a.active, .navbar a:hover {
+.navbar a.active{
   color: rgb(231, 125, 3);
   border-radius: 0.32rem;
   transition: 0.3s ease-in-out;
@@ -978,6 +978,10 @@ a {
 
   .item-footer {
     padding: 0.25rem 0.325rem;
+  }
+
+  .container-footer {
+    padding-bottom: 50px;
   }
 
 }
