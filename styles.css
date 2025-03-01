@@ -76,6 +76,7 @@ a {
   margin: 0 2px;
   line-height: 50px;
   border-radius: 0.32rem;
+  white-space: nowrap;
 }
 
 .navbar a.active{
@@ -87,7 +88,7 @@ a {
 @media (min-width: 768px) {
   .navbar {
     top: 0;
-    width: auto;
+    width: fit-content;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;
@@ -96,7 +97,7 @@ a {
   .navbar a {
     color: white;
     border-radius: 0.32rem;
-    font-size: 7px;
+    font-size: 12px;
     padding: 5px;
     line-height: 50px;
     margin: 0 3px;
