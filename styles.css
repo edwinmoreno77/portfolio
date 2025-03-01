@@ -819,7 +819,6 @@ a {
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  padding: 50px;
 }
 
 .habilidades {
@@ -898,6 +897,7 @@ a {
   .habilidades-container {
     min-height: 400px;
     background-size: 1200px;
+    padding: 50px;
   }
 }
 
@@ -1005,7 +1005,7 @@ a {
   }
 
   .container-footer {
-    padding-bottom: 50px;
+    padding-bottom: 150px;
   }
 
 }
