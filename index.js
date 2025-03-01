@@ -46,6 +46,7 @@ window.addEventListener("scroll", () => {
     carousel.style.animation = "scroll 1.5s ease-out";
   }
 });
+
 //  CERTIFICACIONES
 const carousel = document.getElementById("carousel");
 const items = document.querySelectorAll(".carousel-item");
@@ -79,10 +80,12 @@ document.addEventListener("DOMContentLoaded", function () {
   function setActiveLink() {
     let index = sections.length;
 
-    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+    while (--index && window.scrollY + 150 < sections[index].offsetTop) {}
 
     navLinks.forEach((link) => link.classList.remove("active"));
-    navLinks[index].classList.add("active");
+    if (index >= 0) {
+      navLinks[index].classList.add("active");
+    }
   }
 
   setActiveLink();
@@ -96,9 +99,13 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetSection = document.getElementById(targetId);
 
       window.scrollTo({
-        top: targetSection.offsetTop,
+        top: targetSection.offsetTop - 50, // Ajusta el desplazamiento para evitar superposición
         behavior: "smooth",
       });
+
+      // Actualizar la clase activa manualmente
+      navLinks.forEach((link) => link.classList.remove("active"));
+      this.classList.add("active");
     });
   });
 });
